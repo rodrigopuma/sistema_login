@@ -1,87 +1,41 @@
-🗂 Escopo do Projeto: Sistema de Login em Python
-🎯 Objetivo Geral
-Criar um sistema de cadastro e login de usuários, com armazenamento local simples (por exemplo, em um arquivo .txt) e utilizando funções para organização do código.
+# 🔐 Sistema de Login em Python
 
-📌 Funcionalidades Principais
-Menu Inicial
+Este é um projeto simples de **sistema de login e cadastro de usuários** feito em Python, ideal para quem está começando a praticar conceitos como funções, manipulação de arquivos e estruturas de repetição.
 
-[1] Cadastrar novo usuário
+---
 
-[2] Fazer login
+## 🎯 Objetivo
 
-[3] Sair
+Permitir que usuários possam:
 
-Cadastro de Usuário
+- Cadastrar um nome de usuário único e uma senha
+- Fazer login com os dados cadastrados
+- Armazenar os dados localmente em um arquivo `.txt`
+- Realizar até 3 tentativas de login antes de bloquear
 
-Usuário informa:
+---
 
-Nome de usuário (único)
+## 💻 Funcionalidades
 
-Senha
+- Menu de navegação simples
+- Validação de entrada do usuário
+- Impede cadastro com nome já existente
+- Impede campos vazios no cadastro
+- Limita tentativas de login
+- Mensagens de boas-vindas após login com destaque em cores
 
-Salvar os dados em um arquivo usuarios.txt no formato:
+---
 
-Login
+## 🚀 Como executar o projeto
 
-Usuário digita login e senha
+### Pré-requisitos
 
-Verificação simples:
+- Python 3 instalado na sua máquina
 
-Se usuário e senha estão no arquivo, mostrar mensagem de sucesso
+### Passo a passo
 
-Caso contrário, mensagem de erro
-
-Validações Simples
-
-Impedir cadastro de usuário com nome repetido
-
-Impedir campos vazios
-
-Mostrar mensagens claras para o usuário
-
-🧠 Conteúdo Python que você vai praticar
-Funções (def)
-
-Leitura e escrita em arquivos (open, readlines, write)
-
-Manipulação de strings (split, strip)
-
-Estruturas de decisão (if, else)
-
-Loops (while, for)
-
-Menu com input() e print()
-
-🔐 Extras opcionais (se quiser deixar mais robusto)
-Criptografar a senha com hashlib (se estiver curioso)
-
-Limitar número de tentativas de login
-
-Criar "sessão" fictícia (apenas uma mensagem de "Bem-vindo, [nome]")
-
-📁 Estrutura de arquivos
-bash
-login_system/
-│
-├── main.py # Seu script principal
-└── usuarios.txt # Arquivo com os dados salvos
-
-🧩 Organização sugerida com funções
-python
-def mostrar_menu():
-...
-
-def cadastrar_usuario():
-...
-
-def fazer_login():
-...
-
-def usuario_existe(nome_usuario):
-...
-
-def ler_usuarios():
-...
-
-def salvar_usuario(nome, senha):
-...
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/rodrigopuma/.git
+   cd login_system
+   ```
